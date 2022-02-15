@@ -1,0 +1,28 @@
+$font-primary: "Aktiv Grotesk", sans-serif;
+$font-secondary: "Italiana", serif;
+
+$font-weight-light: 100;
+$font-weight-medium: 300;
+$font-weight-regular: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+$color-primary: #3e1511;
+$color-white: #fff;
+$color-black: #111;
+
+html {
+  font-size: 62.5%;
+  
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $font-primary;
+  //line-height: 1.2px;
+}

@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Aktiv Grotesk", sans-serif;
+}
+
+.header {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+}
+.header__nav {
+  width: 100%;
+  background-color: #111;
+  padding: 2rem 1rem;
+}
+.header__nav--list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.header__nav--menu {
+  height: 0.4rem;
+  width: 4rem;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.header__nav--menu::before,
+.header__nav--menu::after {
+  content: " ";
+  height: 0.4rem;
+  width: 4rem;
+  margin: 0 auto;
+  background-color: #fff;
+  position: absolute;
+}
+.header__nav--menu::before {
+  transform: translateY(-1rem);
+}
+.header__nav--menu::after {
+  transform: translateY(1rem);
+}
+.header__nav--link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.header__hero {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 45rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+.header__hero--content {
+  background-color: #3e1511;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 2rem 3rem;
+}
