@@ -2,7 +2,7 @@ $font-primary: "Aktiv Grotesk", sans-serif;
 $font-secondary: "Italiana", serif;
 
 $font-weight-light: 100;
-$font-weight-medium: 300;
+$font-weight-medium: 400;
 $font-weight-regular: 500;
 $font-weight-bold: 700;
 $font-weight-bolder: 900;
@@ -10,10 +10,10 @@ $font-weight-bolder: 900;
 $color-primary: #3e1511;
 $color-white: #fff;
 $color-black: #111;
+$color-grey: #1a1a1a;
 
 html {
   font-size: 62.5%;
-  
 }
 *,
 *::after,
@@ -23,6 +23,27 @@ html {
   padding: 0;
 }
 body {
+  width: 100%;
+  overflow-x: hidden;
   font-family: $font-primary;
-  //line-height: 1.2px;
+}
+@mixin trend-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
+  padding: 1px 1rem;
+}
+@mixin title-pri {
+  font-size: 6rem;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+}
+@mixin title-sec {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+@mixin content {
+  font-size: 2.4rem;
+  font-weight: $font-weight-regular;
+  margin-bottom: 10rem;
 }
