@@ -162,3 +162,157 @@
     }
   }
 }
+.fashion {
+  padding-top: 12rem;
+  margin-left: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 55rem;
+  position: relative;
+  padding-bottom: 12rem;
+
+  &__type {
+    height: 70rem;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    &:hover > &--content {
+      opacity: 1;
+    }
+    &--image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    &--content {
+      position: absolute;
+      padding: 0 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: $color-white;
+      background-color: rgba($color-primary, 0.7);
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      transition: all 0.5s;
+      .content-heading {
+        font-size: 4.2rem;
+        font-family: $font-secondary;
+        letter-spacing: 0.2rem;
+      }
+      .content-para {
+        font-size: 2.8rem;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+}
+.testimonial {
+  padding-top: 12rem;
+  margin-left: 8rem;
+  text-align: center;
+  clear: both;
+  position: relative;
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+  }
+  &__heading {
+    font-size: 4.2rem;
+    font-family: $font-secondary;
+    color: $color-black;
+    padding: 4rem;
+  }
+  &__image {
+    height: 12rem;
+    border-radius: 50%;
+  }
+  &__name {
+    font-size: 2.4rem;
+    font-family: $font-secondary;
+    color: $color-black;
+    padding: 1rem;
+  }
+  &__msg {
+    font-size: 2.4rem;
+    padding: 0 4rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__rating {
+    padding: 2rem;
+    &--icon {
+      height: 4rem;
+      width: 4rem;
+      fill: $color-primary;
+    }
+  }
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    &--icon {
+      width: 4.2rem;
+      height: 4.2rem;
+      fill: $color-black;
+      transition: fill 0.3s;
+      &:hover {
+        fill: rgba($color-black, 0.5);
+      }
+    }
+  }
+}
+.about {
+  margin-top: 12rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 8rem;
+  background-color: $color-primary;
+  height: 95vh;
+  overflow: hidden;
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__content {
+    padding: 8rem 2rem;
+    &--heading {
+      font-size: 5.8rem;
+      font-family: $font-secondary;
+      color: $color-white;
+      text-align: center;
+      padding: 4rem 0;
+      letter-spacing: 0.4rem;
+    }
+    &--para {
+      font-size: 2.4rem;
+      color: $color-white;
+      line-height: 1.2;
+      letter-spacing: 0.1rem;
+      font-weight: 100;
+      padding: 0 3rem;
+    }
+  }
+}
+.cta {
+  margin-top: 12rem;
+  margin-left: 8rem;
+  text-align: center;
+}
