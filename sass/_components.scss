@@ -25,3 +25,14 @@
     text-decoration: line-through;
   }
 }
+.openNav {
+  visibility: visible;
+  margin-left: 8rem;
+  width: calc(100vw - 8rem);
+  opacity: 1;
+}
+.hide-nav-links {
+  color: $color-black;
+  visibility: hidden;
+  // display: none;
+}

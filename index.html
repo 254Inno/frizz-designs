@@ -13,7 +13,14 @@
       <nav class="header__nav">
         <ul class="header__nav--list">
           <li class="header__nav--item">
-            <div class="header__nav--menu"></div>
+            <div class="header__nav--menu">
+              <svg class="icon-nav">
+                <use xlink:href="img/sprite.svg#xmark"></use>
+              </svg>
+              <svg class="icon-nav icon-visible">
+                <use xlink:href="img/sprite.svg#bars"></use>
+              </svg>
+            </div>
           </li>
           <li class="header__nav--item">
             <a href="#" class="header__nav--link">Home</a>
@@ -93,9 +100,7 @@
             Obcaecati aliquid ullam optio, labore harum eligendi odit maxime
             doloremque eum repellat consectetur nulla?,<br />
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-            quaerat voluptatibus molestias dignissimos est voluptate quidem.
-            Obcaecati aliquid ullam optio, labore harum eligendi odit maxime
-            doloremque eum repellat consectetur nulla?
+            quaerat.
           </p>
         </div>
       </div>
@@ -266,8 +271,9 @@
       </div>
     </section>
     <section class="testimonial">
-      <div class="testimonial__container">
-        <h4 class="testimonial__heading">What they say</h4>
+      <h4 class="testimonial__heading">What they say</h4>
+
+      <div class="testimonial__container" id="0">
         <img src="img/user-2.jpg" alt="user-1" class="testimonial__image" />
         <div class="testimonial__name">Elizabeth James</div>
         <p class="testimonial__msg">
@@ -293,14 +299,15 @@
             <use xlink:href="img/sprite.svg#star-half-solid"></use>
           </svg>
         </div>
-        <div class="testimonial__nav">
-          <svg class="testimonial__nav--icon">
-            <use xlink:href="img/sprite.svg#arrow-left"></use>
-          </svg>
-          <svg class="testimonial__nav--icon">
-            <use xlink:href="img/sprite.svg#arrow-right"></use>
-          </svg>
-        </div>
+      </div>
+
+      <div class="testimonial__nav">
+        <svg class="testimonial__nav--icon">
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+        <svg class="testimonial__nav--icon">
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
       </div>
     </section>
     <section class="about">
@@ -373,5 +380,6 @@
         &copy;2022 Frizz design.All rights reserved.
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

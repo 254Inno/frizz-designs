@@ -33,23 +33,27 @@ body {
       height: 100%;
       align-items: center; }
     .header__nav--menu {
-      height: 0.4rem;
-      width: 4rem;
+      height: 5.5rem;
+      width: 5.5rem;
       margin: 0 auto;
-      background-color: #fff;
       position: relative;
       cursor: pointer; }
-    .header__nav--menu::before, .header__nav--menu::after {
-      content: " ";
-      height: 0.4rem;
-      width: 4rem;
-      margin: 0 auto;
-      background-color: #fff;
-      position: absolute; }
-    .header__nav--menu::before {
-      transform: translateY(-1rem); }
-    .header__nav--menu::after {
-      transform: translateY(1rem); }
+      .header__nav--menu .icon-nav {
+        fill: #fff;
+        height: 0rem;
+        width: 0rem;
+        z-index: -1000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.6s; }
+      .header__nav--menu .icon-visible {
+        fill: #fff;
+        height: 5.5rem;
+        width: 5.5rem;
+        opacity: 1; }
     .header__nav--link {
       text-decoration: none;
       color: #fff;
@@ -58,12 +62,8 @@ body {
       font-weight: 700;
       letter-spacing: 0.5px;
       writing-mode: vertical-lr;
-      transform: rotate(180deg); }
-    .header__nav:hover ~ .header__nav-full {
-      visibility: visible;
-      margin-left: 8rem;
-      width: calc(100vw - 8rem);
-      opacity: 1; }
+      transform: rotate(180deg);
+      transition: all 0.6s; }
   .header__nav-full {
     z-index: 10000;
     background-color: #111;
@@ -84,7 +84,8 @@ body {
         display: flex;
         gap: 2rem; }
       .header__nav-full--nav-link {
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 0.3s; }
       .header__nav-full--nav-icon {
         width: 4rem;
         height: 4rem;
@@ -319,7 +320,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    margin: 0 5rem; }
     .testimonial__nav--icon {
       width: 4.2rem;
       height: 4.2rem;
@@ -445,3 +447,13 @@ body {
   padding: 1rem 2rem; }
   .trend-link:hover {
     text-decoration: line-through; }
+
+.openNav {
+  visibility: visible;
+  margin-left: 8rem;
+  width: calc(100vw - 8rem);
+  opacity: 1; }
+
+.hide-nav-links {
+  color: #111;
+  visibility: hidden; }
